@@ -1,8 +1,45 @@
+//import tailwind
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+// Colors
+$bg-color1: #45b649;
+$bg-color2: #dce35b;
+$btn-bg: #8a2be2;
+$white-color: #fff;
+
+//General styles
+
 body {
-  background-color: #333;
-  color: white;
+  background: linear-gradient(to bottom, $bg-color1, $bg-color2);
+  height: 100vh;
+  width: 100vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+// Remove arrows from input number
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+//Main styles
+
+.btn {
+  background-color: $btn-bg;
+  color: $white-color;
+}
+
+.main-border {
+  border-radius: 3rem;
+}
+
+.input-border {
+  border: 2px solid black;
 }
