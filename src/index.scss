@@ -16,6 +16,9 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // Remove arrows from input number
@@ -42,4 +45,35 @@ input[type="number"] {
 
 .input-border {
   border: 2px solid black;
+}
+
+// Responsive
+@media screen and (max-width: 687px) {
+  .text-2xl {
+    font-size: 1rem;
+  }
+  .text-base {
+    font-size: 0.8rem;
+  }
+  .text-xl {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 566px) {
+  .px-32 {
+    padding: 5rem;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  .px-32 {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .px-32 {
+    padding: 2rem;
+  }
 }
