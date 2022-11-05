@@ -7,6 +7,7 @@
 $bg-color1: #45b649;
 $bg-color2: #dce35b;
 $btn-bg: #8a2be2;
+$btn-hover-bg: #a74dfc;
 $white-color: #fff;
 
 //General styles
@@ -37,6 +38,10 @@ input[type="number"] {
 .btn {
   background-color: $btn-bg;
   color: $white-color;
+  transition: background-color 1s ease;
+  &:hover {
+    background-color: $btn-hover-bg;
+  }
 }
 
 .main-border {
