@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function App() {
   // States
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState(0);
 
   // Functions
   const handleSubmit = (e) => {
